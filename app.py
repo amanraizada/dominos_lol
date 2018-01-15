@@ -10,7 +10,7 @@ btc = "3MUT2imvKa2V4BZ6cBGAfZFeQ5PS9kopdk"
 
 
 chrome_options = Options()  
-chrome_options.add_argument("--headless --window-size=1920,1080")
+#chrome_options.add_argument("--headless --window-size=1920,1080")
 chrome_options.binary_location = r"/app/.apt/usr/bin/google-chrome"
 
 driver = webdriver.Chrome(chrome_options=chrome_options)

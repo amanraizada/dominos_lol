@@ -26,7 +26,7 @@ while True:
     except:
         print(">> Ad Close Failed : Maybe No AD!")
     print(">> Input BTC address : " + btc)
-    address = driver.find_element_by_xpath('/html/body/center/table/tbody/tr/td[2]/div/form/input[1]')
+    address = driver.find_element_by_name('addy')
     address.send_keys(btc)
     print(">> Solving Captcha")
     source = driver.find_element_by_xpath('//*[@id="captchmeslider"]')

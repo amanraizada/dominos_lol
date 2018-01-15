@@ -11,10 +11,13 @@ btc = "3MUT2imvKa2V4BZ6cBGAfZFeQ5PS9kopdk"
 
 chrome_options = Options()  
 chrome_options.add_argument("--headless --window-size=1920,1080")
+chrome_options.binary_location = r"/app/.apt/usr/bin/google-chrome"
 
-driver = webdriver.Chrome(executable_path="chromedriver.exe", chrome_options=chrome_options)
+driver = webdriver.Chrome(chrome_options=chrome_options)
+#driver = webdriver.Chrome(executable_path="chromedriver.exe", chrome_options=chrome_options)
 
 while True:
+    print(">> MADE BY KRISH!!")
     print(">> Opening Website")
     driver.get("http://claimfreebtc.win/")
     print(">> Closing Ad")
